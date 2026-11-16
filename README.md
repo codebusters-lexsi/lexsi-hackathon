@@ -181,7 +181,7 @@ python pipeline.py --stage test
 ## 🔗 Artifact & Hub Links
 
 - **GitHub Monorepo**: [https://github.com/codebusters-lexsi/lexsi-hackathon](https://github.com/codebusters-lexsi/lexsi-hackathon)
-- **Hugging Face Unified Collection (Models & Datasets)**: [https://huggingface.co/collections/rishi-cherukuri/lexsi-ai-safety-hackathon-models-and-datasets-track-1-p5-and](https://huggingface.co/collections/rishi-cherukuri/lexsi-ai-safety-hackathon-models-and-datasets-track-1-p5-and)
+- **Hugging Face Unified Collection (Models & Datasets)**: [https://huggingface.co/collections/rishi-cherukuri/lexsi-ai-safety-hackathon-models-and-datasets-track-1-p5-and-6afac1c402014765d73d0137](https://huggingface.co/collections/rishi-cherukuri/lexsi-ai-safety-hackathon-models-and-datasets-track-1-p5-and-6afac1c402014765d73d0137)
 - **Hugging Face Community Article**: Included at [`track1_problem8_hydrometallurgy/HF_ARTICLE.md`](track1_problem8_hydrometallurgy/HF_ARTICLE.md)
 
 ---
