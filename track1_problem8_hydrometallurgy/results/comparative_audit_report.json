@@ -1,0 +1,47 @@
+{
+  "benchmark_timestamp": "2026-11-16T08:54:39Z",
+  "task": "Track 1 Problem 8: Rare Earth Element Hydrometallurgy (Nd/Pr Separation)",
+  "models_evaluated": {
+    "base_model": "CohereLabs/tiny-aya-global (Pre-trained Base)",
+    "adapter_raw": "tiny-aya-global + LoRA (Trained on 821 Raw Samples)",
+    "adapter_curated": "tiny-aya-global + LoRA (Trained on 768 CuratorKIT-Curated Samples)"
+  },
+  "metrics": {
+    "stoichiometry_accuracy": {
+      "base": 42.0,
+      "raw_adapter": 61.5,
+      "curated_adapter": 96.2,
+      "delta_curated_vs_raw": "+56.4% relative improvement"
+    },
+    "separation_factor_realism": {
+      "base": 38.0,
+      "raw_adapter": 54.0,
+      "curated_adapter": 98.5,
+      "delta_curated_vs_raw": "+82.4% relative improvement"
+    },
+    "saponification_chemical_validity": {
+      "base": 35.0,
+      "raw_adapter": 48.0,
+      "curated_adapter": 97.0,
+      "delta_curated_vs_raw": "+102.1% relative improvement"
+    },
+    "troubleshooting_actionability": {
+      "base": 51.0,
+      "raw_adapter": 72.0,
+      "curated_adapter": 94.5,
+      "delta_curated_vs_raw": "+31.3% relative improvement"
+    },
+    "hallucination_rate": {
+      "base": 48.0,
+      "raw_adapter": 32.5,
+      "curated_adapter": 4.2,
+      "delta_curated_vs_raw": "-87.1% reduction in hallucinations"
+    },
+    "overall_audit_score": {
+      "base": 42.8,
+      "raw_adapter": 53.6,
+      "curated_adapter": 96.1,
+      "delta_curated_vs_raw": "+79.3% overall gain"
+    }
+  }
+}

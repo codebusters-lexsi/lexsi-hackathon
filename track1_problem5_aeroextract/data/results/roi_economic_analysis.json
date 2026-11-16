@@ -1,0 +1,37 @@
+{
+  "analysis_title": "Enterprise ROI Comparison: Closed-Source API vs. Aligned Tiny Aya",
+  "workload_profile": {
+    "avg_input_tokens": 650,
+    "avg_output_tokens": 180,
+    "tokens_per_doc": 830,
+    "target_hardware": "NVIDIA L4 24GB ($0.35/hr)",
+    "inference_throughput": "15 docs/sec (54,000 docs/hr)",
+    "privacy_compliance": "100% on-premise / zero egress of FAA maintenance logs"
+  },
+  "volume_tiers": [
+    {
+      "document_volume": "10,000",
+      "closed_source_api_cost": "$34.25",
+      "self_hosted_tiny_aya_cost": "$0.35",
+      "net_savings_dollars": "$33.90",
+      "cost_reduction_percent": "99.0%",
+      "gpu_runtime_hours": "0.19 hrs"
+    },
+    {
+      "document_volume": "100,000",
+      "closed_source_api_cost": "$342.50",
+      "self_hosted_tiny_aya_cost": "$0.65",
+      "net_savings_dollars": "$341.85",
+      "cost_reduction_percent": "99.8%",
+      "gpu_runtime_hours": "1.85 hrs"
+    },
+    {
+      "document_volume": "1,000,000",
+      "closed_source_api_cost": "$3,425.00",
+      "self_hosted_tiny_aya_cost": "$6.48",
+      "net_savings_dollars": "$3,418.52",
+      "cost_reduction_percent": "99.8%",
+      "gpu_runtime_hours": "18.52 hrs"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "pipeline": "Lexsi CuratorKIT Production Pipeline",
+  "domain": "Rare Earth Element (Nd/Pr) Hydrometallurgical Solvent Extraction",
+  "total_raw_evaluated": 821,
+  "total_curated_retained": 776,
+  "total_rejected": 45,
+  "retention_rate": "94.52%",
+  "filters": [
+    "MinHash 5-gram Jaccard Deduplication (threshold=0.82)",
+    "LengthFilter (85 - 1600 assistant words, 12+ prompt words)",
+    "Chemistry & Stoichiometry Concept Verifier",
+    "Multi-Criteria Scientific Rubric Gate (Score >= 7.0/10)"
+  ]
+}

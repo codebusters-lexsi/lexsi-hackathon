@@ -1,0 +1,57 @@
+backend: trl
+training_type: sft
+task_type: instruction_following
+model:
+  model_name_or_path: CohereLabs/tiny-aya-base-32K
+  torch_dtype: bfloat16
+  device_map: auto
+  trust_remote_code: true
+  use_cache: false
+tokenizer:
+  model_name_or_path: CohereLabs/tiny-aya-base-32K
+  trust_remote_code: true
+  use_fast: true
+  padding_side: right
+peft:
+  enabled: true
+  variant: standard
+  rank: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+  bias: none
+  task_type: CAUSAL_LM
+dataset:
+  type: jsonl
+  train_file: data/curated/train.jsonl
+  validation_file: data/curated/val.jsonl
+  preprocessing:
+    max_seq_length: 2048
+    padding: max_length
+    truncation: true
+    instruction_column: instruction
+    input_column: input
+    response_column: output
+training:
+  output_dir: ./outputs/tiny_aya_aviation_extractor
+  overwrite_output_dir: true
+  learning_rate: 0.0002
+  lr_scheduler_type: cosine
+  warmup_ratio: 0.05
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 4
+  num_train_epochs: 3
+  weight_decay: 0.01
+  logging_steps: 5
+  save_strategy: epoch
+  evaluation_strategy: epoch
+  bf16: true
+  fp16: false
+  seed: 42

@@ -1,0 +1,13 @@
+{
+  "split": "raw",
+  "base_model": "CohereLabs/tiny-aya-global",
+  "framework": "Lexsi AlignTune",
+  "backend": "trl",
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "learning_rate": 2e-05,
+  "num_epochs": 3,
+  "batch_size": 2,
+  "device": "cpu",
+  "status": "COMPLETED"
+}

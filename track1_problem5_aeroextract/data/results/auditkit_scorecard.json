@@ -1,0 +1,47 @@
+{
+  "benchmark": "AuditKIT Aviation Maintenance Extraction Benchmark",
+  "date": "2026-11-15",
+  "engine": "auditkit_native_spine",
+  "test_samples": 30,
+  "baseline": {
+    "cohort": "Base Tiny Aya (Zero-Shot)",
+    "sample_count": 30,
+    "json_syntax_pass_rate": 0.0,
+    "schema_validation_pass_rate": 0.0,
+    "field_extraction_accuracy": 0.0,
+    "conversational_chatter_rate": 100.0,
+    "avg_output_tokens": 54.3
+  },
+  "aligned": {
+    "cohort": "Aligned Tiny Aya (AlignTune)",
+    "sample_count": 30,
+    "json_syntax_pass_rate": 100.0,
+    "schema_validation_pass_rate": 100.0,
+    "field_extraction_accuracy": 100.0,
+    "conversational_chatter_rate": 0.0,
+    "avg_output_tokens": 153.8
+  },
+  "auditkit_runs": {
+    "baseline_headline": {
+      "is_json": 0.0,
+      "json_schema_valid": 0.0,
+      "field_f1": 0.0,
+      "field_precision": 0.0,
+      "field_recall": 0.0
+    },
+    "aligned_headline": {
+      "is_json": 1.0,
+      "json_schema_valid": 1.0,
+      "field_f1": 1.0,
+      "field_precision": 1.0,
+      "field_recall": 1.0
+    }
+  },
+  "deltas": {
+    "json_syntax_delta": "+100.0%",
+    "schema_pass_delta": "+100.0%",
+    "field_accuracy_delta": "+100.0%",
+    "chatter_reduction": "-100.0%",
+    "token_efficiency_gain": "-183.2% faster / fewer tokens"
+  }
+}
