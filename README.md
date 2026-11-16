@@ -155,7 +155,7 @@ lexsi-hackathon/
 
 ### 1. Clone the Monorepo
 ```bash
-git clone https://github.com/rishi-cherukuri/lexsi-hackathon.git
+git clone https://github.com/codebusters-lexsi/lexsi-hackathon.git
 cd lexsi-hackathon
 ```
 
@@ -180,9 +180,8 @@ python pipeline.py --stage test
 
 ## 🔗 Artifact & Hub Links
 
-- **GitHub Monorepo**: [https://github.com/rishi-cherukuri/lexsi-hackathon](https://github.com/rishi-cherukuri/lexsi-hackathon)
-- **Hugging Face Model Collection**: *[Link to Model Collection]*
-- **Hugging Face Dataset Collection**: *[Link to Dataset Collection]*
+- **GitHub Monorepo**: [https://github.com/codebusters-lexsi/lexsi-hackathon](https://github.com/codebusters-lexsi/lexsi-hackathon)
+- **Hugging Face Unified Collection (Models & Datasets)**: [https://huggingface.co/collections/rishi-cherukuri/lexsi-ai-safety-hackathon-models-and-datasets-track-1-p5-and](https://huggingface.co/collections/rishi-cherukuri/lexsi-ai-safety-hackathon-models-and-datasets-track-1-p5-and)
 - **Hugging Face Community Article**: Included at [`track1_problem8_hydrometallurgy/HF_ARTICLE.md`](track1_problem8_hydrometallurgy/HF_ARTICLE.md)
 
 ---
